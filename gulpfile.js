@@ -24,7 +24,7 @@ gulp.task('sass', function(){
 gulp.task('browser-sync', function(){
 	browserSync({
 		server: {
-			baseDir: 'app' 
+			baseDir: './' 
 		},
 		notify: false
 	});
@@ -50,7 +50,7 @@ gulp.task('css-libs', ['sass'], function(){
 
 gulp.task('watch',['browser-sync', 'css-libs','scripts'], function(){  //в кв скобках выполнится до watch
 	gulp.watch('app/sass/**/*.scss', ['sass']);// усли изменения в sass то таск [sass]
-	gulp.watch('app/*.html', browserSync.reload);
+	gulp.watch('./*.html', browserSync.reload);
 	gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 
@@ -87,11 +87,6 @@ gulp.task('build', ['clean', 'img','gif', 'sass', 'scripts'], function(){
     
     var buildJs = gulp.src('app/js/**/*')
         .pipe(gulp.dest('dist/js'));
-    
-    var buildHtml = gulp.src('app/*.html')
-    	.pipe(gulp.dest('dist'));
-
-
 })
 
 gulp.task('clear', function (callback) {
