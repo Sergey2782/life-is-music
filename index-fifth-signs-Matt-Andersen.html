@@ -18,8 +18,10 @@
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-darktransparent">
     <div class="container">
-        <a class="navbar-brand padd" href="#">
-                <img src="dist/img/logo1.png" alt="" width="41rem" >
+        <a class="navbar-brand padd" href="index.html">
+            <img src="dist/img/logo1.png" alt="" class="logo">
+            <img src="dist/img/logo1.png" alt="" class="logo">
+            <img src="dist/img/logo1.png" alt="" class="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -34,8 +36,8 @@
                     <a class="nav-link" href="index-my-videos.html">Music<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="mt-2 ml-3 mr-2">  
-                     <a href="#" class="link_Post_1">
-                     <img src="dist/img/email.gif" width="32.5rem"></a>
+                     <a href="#" id="post" data-oper="post">
+                     <img src="dist/img/email.gif" style="width:2rem;"></a>
                 </li>
                 <li class="img-utube"><a href="https://www.youtube.com/channel/UCiekqdvB38F7YMYf44FUrKA" target="_blank"><img class="img-hov" src="dist/img/u-t11.png" alt="go on youtube"></a>
                 </li>
@@ -56,11 +58,11 @@
         </div>
     </div>
 </header>
-<button class="btn btn-totop btn-outline-info" title="Go to top">Top</button>
+<btn class="btn-totop"  title="Go to top"><img src="dist/img/imgonline-com-ua-Resize-2DI8I8pFoIXx.png"></btn>
 <main class="main">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-md-9 order-1 order-lg-2">
+            <div class="col-lg-8">
                 <div class="card mb-4">
                    <img class="card-img-top" src="dist/img/MAtt%20Andersen%20(2).jpg" alt="Card image cap">
                    <div class="card-body">
@@ -194,72 +196,80 @@
             </div>   <!--  end of column -->
             
            <!--  video from youtube ---->
-            <div class="col-lg-3 col-md-4 order-2 order-lg-3">
-                <div class="img-thumbnail mb-4 embed-responsive embed-responsive-16by9 video-vert-center  video-center">
-                <iframe width="1263" height="708" src="https://www.youtube.com/embed/jLsye_LJ_Ks" frameborder="0" gesture="media" allowfullscreen></iframe>
-                </div>
-                <div class="mb-4 img-thumbnail embed-responsive embed-responsive-16by9 video-vert-center">
-                  <iframe width="1263" height="708" src="https://www.youtube.com/embed/j_e0I05VSc0" frameborder="0" gesture="media" allowfullscreen></iframe>
-                </div>
-                
-                  <div class="img-thumbnail mb-4 embed-responsive embed-responsive-16by9 video-vert-center  video-center">
-               <iframe width="1263" height="708" src="https://www.youtube.com/embed/fYqeOU5WQsk" frameborder="0" gesture="media" allowfullscreen></iframe>
-                </div>
-               <div class="anime">
-                    <div class="world">
-                        <p>
-                       <span class="m">M</span>
-                       <span class="anime_one">U</span>SIC
-                       <span class="anime_two">is</span><br>
-                       <span class="red">AWE</span>
-                       <span class="anime_three">SOME</span>
-                         </p>
+            <div class="col-lg-4 col-md-12">
+               <div class="row">
+             <!--     изменил колонку с видео - она меньще относительно родиетельского конт-ра     -->
+           
+                    <div class="col-lg-9 col-md-6 col-sm-6 img-thumbnail mb-4 embed-responsive embed-responsive-16by9 video-vert-center  video-center">
+                       <iframe width="1263" height="708" src="https://www.youtube.com/embed/jLsye_LJ_Ks" frameborder="0" gesture="media" allowfullscreen></iframe>
                     </div>
-                  </div>
+                    <div class="col-lg-9 col-md-6 col-sm-6 mb-4 img-thumbnail embed-responsive embed-responsive-16by9 video-vert-center">
+                      <iframe width="1263" height="708" src="https://www.youtube.com/embed/j_e0I05VSc0" frameborder="0" gesture="media" allowfullscreen></iframe>
+                    </div>
 
-                <h3>Tags Cloud</h3>
-                <div class="block bg-lightlightgray shadow">
+                      <div class="col-lg-9 col-md-6 col-sm-6 img-thumbnail mb-4 embed-responsive embed-responsive-16by9 video-vert-center  video-center">
+                        <iframe width="1263" height="708" src="https://www.youtube.com/embed/fYqeOU5WQsk" frameborder="0" gesture="media" allowfullscreen></iframe>
+                    </div>
+               </div>
+               <div class="row">
+                   <div class="mt-3 anime col-lg-9 col-md-6 col-sm-6">
+                       <div class="world">
+                            <p>
+                           <span class="m">M</span>
+                           <span class="anime_one">U</span>SIC
+                           <span class="anime_two">is</span><br>
+                           <span class="red">AWE</span>
+                           <span class="anime_three">SOME</span>
+                             </p>
+                       </div>
+                    </div>
+                 
+                 <div class="col-lg-8 col-md-6 col-sm-6 block bg-lightlightgray shadow">
+                   <h3>Tags Cloud</h3>
                     <a class="badge badge-info" href="#">FingerStyle</a>
                     <a class="badge badge-info" href="#">Musicians</a>
                     <a class="badge badge-info" href="#">Photo</a>
                     <a class="badge badge-info" href="#">New faces</a>
                     <a class="badge badge-info" href="#">Nature</a>
                     <a class="badge badge-info" href="#">World</a>
+                 </div>
                 </div>
-                
+            
+    
                 <h3>Gallery</h3>
-                <div class="block bg-lightlightgray shadow">
+                <div class="col-lg-8 col-md-6 col-sm-6 block bg-lightlightgray shadow">
                     <div class="row no-gutters">
                         <div class="col-6">
-                            <img class="img-fluid" src="dist/img/gallery-%20(12).jpg" alt="">
+                            <img class="img-fluid" src="dist/img/gallery-%20(89).jpg" alt="">
                         </div>
                         <div class="col-6">
-                            <img class="img-fluid" src="dist/img/gallery-%20(98).jpg" alt="">
+                            <img class="img-fluid" src="dist/img/gallery-%20(24).jpg" alt="">
                         </div>
                         <div class="col-6">
-                            <img class="img-fluid" src="dist/img/gallery-%20(99).jpg" alt="">
+                            <img class="img-fluid" src="dist/img/gallery-%20(90).jpg" alt="">
                         </div>
                         <div class="col-6">
-                            <img class="img-fluid" src="dist/img/gallery-%20(100).jpg" alt="">
+                            <img class="img-fluid" src="dist/img/gallery-%20(92).jpg" alt="">
                         </div>   
                         <div class="col-6">
-                            <img class="img-fluid" src="dist/img/gallery-%20(17).jpg" alt="">
+                            <img class="img-fluid" src="dist/img/gallery-%20(93).jpg" alt="">
                         </div>
                         <div class="col-6">
-                            <img class="img-fluid" src="dist/img/gallery-%20(15).jpg" alt="">
+                            <img class="img-fluid" src="dist/img/gallery-%20(94).jpg" alt="">
                         </div>
                         <div class="col-6">
-                            <img class="img-fluid" src="dist/img/gallery-%20(103).jpg" alt="">
+                            <img class="img-fluid" src="dist/img/gallery-%20(95).jpg" alt="">
                         </div>
                         <div class="col-6">
-                            <img class="img-fluid" src="dist/img/gallery-%20(11).jpg" alt="">
+                            <img class="img-fluid" src="dist/img/gallery-%20(96).jpg" alt="">
                         </div>
                       </div>
                   </div>
-                  
+             
+               
                   <h3>Musicians</h3>
                   <div class="row">
-                   <div class="col-md-12 col-sm-6">
+                   <div class="col-lg-9 col-md-6 col-sm-6 col-6">
                     <div class="hover ehover1">
 						<img class="active_one mr-1 ml-1" id="img" src="dist/img/guys1.jpg" alt="Andy Mckee">
 						<div class="overlay">
@@ -268,7 +278,7 @@
 				   		</div>				
 				    </div>
                    </div>
-                   <div class="col-md-12 col-sm-6">
+                   <div class="col-lg-9 col-md-6 col-sm-6 col-6">
                     <div class="hover ehover1">
 						<img class="active_one mr-1 ml-1" id="img" src="dist/img/Aaron Lewis.jpg" alt="Aaron Lewis">
 						<div class="overlay">
@@ -277,7 +287,7 @@
 						</div>				
 				     </div>
                     </div>
-                    <div class="col-md-12 col-sm-6">
+                    <div class="col-lg-9 col-md-6 col-sm-6 col-6">
                     <div class="hover ehover1">
 						<img class="active_one" id="img" src="dist/img/Matt Andersen.jpg" alt="Matt Andersen">
 						<div class="overlay">
@@ -286,7 +296,7 @@
 						</div>				
 				     </div>
                     </div>
-                   <div class="col-md-12 col-sm-6">
+                   <div class="col-lg-9 col-md-6 col-sm-6 col-6">
                     <div class="hover ehover1">
 						<img class="active_one" id="img" src="dist/img/Matt%20Corby.jpg" alt="Matt Corby">
 						<div class="overlay">
@@ -295,12 +305,13 @@
 						</div>	
 				     </div>
                 </div>
+                </div><!-- / .row (musicians) -->
                  <div class="col btn-group-prev-next">
-                    <a href="index-2.html"><button class="btn btn-outline-info mt-3">Back to list of articles</button></a>
+                    <a href="index-2.html"><button class="btn btn-outline-info mt-3">Back to list of articles</button></a><br>
                     <a href="index-sixth-signs-Lohn-Legend.html"><button class="btn btn-outline-info mt-3">Next article</button></a>
                 </div>
-                <div class="col bg-lightlightgray shadow mt-3">
-                    <img src="dist/img/john-legend.jpg" class="img-fluid mt-3 mb-2" alt="J.Legend" width="250px"><p>John Legend on His A Cappella<p>
+                <div class="col-md-6 col-lg-8 col-sm-6 col-10 bg-lightlightgray shadow mt-3">
+                    <img src="dist/img/john-legend.jpg" class="img-fluid mt-3 mb-2" alt="J.Legend"><p>John Legend on His A Cappella<p>
                 </div>
              </div> 
           </div><!-- / .row  -->
@@ -319,8 +330,8 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <h3 class="ml-3">Contacts</h3>
                 <nav class="nav flex-column">
-                   <a class="nav-link active" href="#"><button type="button" class="link_Post_2 btn btn-outline-info">Hey ! Mail me - buddy</button></a>
-                   <a class="nav-link" href="index-my-videos.html"><button type="button" class="link_Post_2 btn btn-outline-info">Check it out My videos</button></a>
+                   <a class="nav-link active" href="#"><button type="button" class="btn btn-outline-info" id="post" data-oper="post">Hey ! Mail me - buddy</button></a>
+                   <a class="nav-link" href="index-my-videos.html"><button type="button" class="btn btn-outline-info">Check it out My videos</button></a>
                 </nav>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
@@ -328,7 +339,7 @@
                 <nav class="nav flex-column">
                   <a class="nav-link active" href="index.html">Home</a>
                   <a class="nav-link" href="https://www.youtube.com/channel/UCiekqdvB38F7YMYf44FUrKA" target="_blank">Music</a>
-                  <a class="nav-link link_Post_3" href="#">Contacts</a>
+                  <a class="nav-link" href="#" id="post" data-oper="post">Contacts</a>
                 </nav>
             </div>
          </div>
@@ -336,8 +347,11 @@
 </footer>
 <div class="copyright">
     <div class="container">
-        <img src="dist/img/logo1.png" alt="">
-             copyright all right reserved</div>
+        <img src="dist/img/logo1.png" class="logo" alt="">
+        <img src="dist/img/logo1.png" class="logo" alt="">
+        <img src="dist/img/logo1.png" class="logo" alt="">
+        <div class='copy-r'><img class="mr-1" src="dist/img/copyright.png" alt="">all right reserved</div>
+    </div>
 </div>
 
     

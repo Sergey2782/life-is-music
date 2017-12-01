@@ -17,7 +17,7 @@ gulp.task('sass', function(){
 	return gulp.src('app/sass/main.scss') 
 		.pipe(sass()) 
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
-		.pipe(gulp.dest('app/css')) 
+		.pipe(gulp.dest('dist/css')) 
 		.pipe(browserSync.reload({stream: true})) 
 });
 
@@ -38,18 +38,18 @@ gulp.task('scripts', function(){
 	 ])
      .pipe(concat('libs.min.js'))
      .pipe(uglify())
-     .pipe(gulp.dest('app/js'));
+     .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('css-libs', ['sass'], function(){
-	return gulp.src('app/css/main.css')
+	return gulp.src('dist/css/main.css')
 	.pipe(cssnano())
 	.pipe(rename({suffix: '.min'}))
-	.pipe(gulp.dest('app/css'));
+	.pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('watch',['browser-sync', 'css-libs','scripts'], function(){  //в кв скобках выполнится до watch
-	gulp.watch('app/sass/**/*.scss', ['sass']);// усли изменения в sass то таск [sass]
+	gulp.watch('app/sass/**/*.scss', ['sass']);
 	gulp.watch('./*.html', browserSync.reload);
 	gulp.watch('app/js/**/*.js', browserSync.reload);
 });
@@ -68,22 +68,23 @@ gulp.task('img', function(){
         })))
 	.pipe(gulp.dest('dist/img'));
 })
-
+/*
 gulp.task('gif', function(){
-	return gulp.src('app/img/**/*.gif')
+	return gulp.src('app/img/** /*.gif')
 	  .pipe(cache(gifsicle()))
 	  .pipe(gulp.dest('dist/img'));
 })
-    
-gulp.task('build', ['clean', 'img','gif', 'sass', 'scripts'], function(){
-	var buildCss = gulp.src([
+*/
+
+gulp.task('build', ['clean', 'sass', 'css-libs', 'img', 'scripts'], function(){
+	/*var buildCss = gulp.src([
        'app/css/main.css',
        'app/css/main.min.css',
 	])
 	.pipe(gulp.dest('dist/css'));
 
- 	var buildFonts = gulp.src('app/fonts/**/*')
- 	    .pipe(gulp.dest('dist/fonts'));
+ 	var buildFonts = gulp.src('app/fonts/** /*')
+ 	    .pipe(gulp.dest('dist/fonts')); */    
     
     var buildJs = gulp.src('app/js/**/*')
         .pipe(gulp.dest('dist/js'));

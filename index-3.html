@@ -18,8 +18,10 @@
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-darktransparent">
     <div class="container">
-        <a class="navbar-brand padd" href="#">
-                <img src="dist/img/logo1.png" alt="" width="41rem" >
+        <a class="navbar-brand padd" href="index.html">
+            <img src="dist/img/logo1.png" alt="" class="logo">
+            <img src="dist/img/logo1.png" alt="" class="logo">
+            <img src="dist/img/logo1.png" alt="" class="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -34,8 +36,8 @@
                     <a class="nav-link" href="index-my-videos.html">Music<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="mt-2 ml-3 mr-2">  
-                     <a href="#" class="link_Post_1">
-                     <img src="dist/img/email.gif" width="32.5rem"></a>
+                     <a href="#" id="post" data-oper="post">
+                     <img src="dist/img/email.gif" style="width:2rem;"></a>
                 </li>
                 <li class="img-utube"><a href="https://www.youtube.com/channel/UCiekqdvB38F7YMYf44FUrKA" target="_blank"><img class="img-hov" src="dist/img/u-t11.png" alt="go on youtube"></a>
                 </li>
@@ -56,7 +58,7 @@
         </div>
     </div>
 </header>
-
+<btn class="btn-totop"  title="Go to top"><img src="dist/img/imgonline-com-ua-Resize-2DI8I8pFoIXx.png"></btn>
 <main class="main">
     <div class="container">
         <div class="row">
@@ -216,8 +218,8 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <h3 class="ml-3">Contacts</h3>
                 <nav class="nav flex-column">
-                   <a class="nav-link active" href="#"><button type="button" class="link_Post_2 btn btn-outline-info">Hey ! Mail me - buddy</button></a>
-                   <a class="nav-link" href="index-my-videos.html"><button type="button" class="link_Post_2 btn btn-outline-info">Check it out My videos</button></a>
+                   <a class="nav-link active" href="#"><button type="button" class="btn btn-outline-info" id="post" data-oper='post'>Hey ! Mail me - buddy</button></a>
+                   <a class="nav-link" href="index-my-videos.html"><button type="button" class="btn btn-outline-info">Check it out My videos</button></a>
                 </nav>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
@@ -225,7 +227,7 @@
                 <nav class="nav flex-column">
                   <a class="nav-link active" href="index.html">Home</a>
                   <a class="nav-link" href="https://www.youtube.com/channel/UCiekqdvB38F7YMYf44FUrKA" target="_blank">Music</a>
-                  <a class="nav-link link_Post_3" href="#">Contacts</a>
+                  <a class="nav-link" id="post" href="#" data-oper='post'>Contacts</a>
                 </nav>
             </div>
         </div>
@@ -233,8 +235,11 @@
 </footer>
 <div class="copyright">
     <div class="container">
-        <img src="dist/img/logo1.png" alt="">
-             copyright all right reserved</div>
+        <img src="dist/img/logo1.png" class="logo" alt="">
+        <img src="dist/img/logo1.png" class="logo" alt="">
+        <img src="dist/img/logo1.png" class="logo" alt="">
+        <div class='copy-r'><img class="mr-1" src="dist/img/copyright.png" alt="">all right reserved</div>
+    </div>
 </div>
     <!-- JS -->
     <script src="dist/js/libs.min.js"></script>

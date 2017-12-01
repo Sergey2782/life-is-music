@@ -6474,7 +6474,7 @@ button.list-group-item-lightlightgray {
   background: url("../img/bg-correct.png") no-repeat center;
   -webkit-background-size: cover;
           background-size: cover;
-  margin-top: -3.7rem;
+  margin-top: -4rem;
   color: white;
   text-align: center; }
   @media (max-width: 1199px) {
@@ -6509,11 +6509,25 @@ button.list-group-item-lightlightgray {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
 
+.col {
+  border: 1px solid transparent; }
+
 .footer {
   padding: 2rem 0;
   margin-top: 3rem;
   background-color: rgba(52, 56, 64, 0.8);
   color: #fff; }
+
+.logo {
+  width: 2.75rem;
+  margin-right: -1.8rem; }
+
+.copy-r {
+  font-size: 0.6rem;
+  margin-top: -0.4rem; }
+
+.copy-r > img {
+  width: .8rem; }
 
 .copyright {
   padding: 1 rem;
@@ -6522,7 +6536,6 @@ button.list-group-item-lightlightgray {
   text-align: center; }
 
 .anime {
-  background-color: rgba(214, 214, 214, 0.62);
   margin-bottom: 2rem; }
 
 .world {
@@ -6551,30 +6564,27 @@ button.list-group-item-lightlightgray {
   display: none;
   z-index: 2000;
   position: fixed;
-  bottom: 2.5rem;
-  left: 1.7rem;
-  font-size: 0.9rem;
-  padding: 0.2rem; }
+  bottom: .5rem;
+  left: 1.4rem;
+  font-size: 5rem; }
   @media (max-width: 576px) {
     .btn-totop {
       left: 0.1rem;
-      font-size: 0.75rem;
-      padding: 0.15rem; } }
+      margin-left: -5px; } }
+  @media (min-width: 250px) and (max-width: 576px) {
+    .btn-totop {
+      left: 0.5rem; } }
   @media (min-width: 576px) and (max-width: 767px) {
     .btn-totop {
-      left: 0.8rem;
-      font-size: 1rem;
-      padding: 0.2rem; } }
+      left: 0.37rem; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .btn-totop {
       left: 0.7rem;
-      font-size: 1rem;
-      padding: 0.2rem; } }
+      font-size: 5rem;
+      width: 2rem; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     .btn-totop {
-      left: 0.5rem;
-      font-size: 0.9rem;
-      padding: 0.2rem; } }
+      left: 0.3rem; } }
 
 /*======= animation =====*/
 @-webkit-keyframes anime_one {
@@ -6884,7 +6894,7 @@ button.list-group-item-lightlightgray {
 .modal-open .modal, button:focus {
   outline: none !important; }
 
-@media (min-width: 767px) and (max-width: 1120px) {
+@media (min-width: 767px) and (max-width: 991px) {
   .hover {
     width: 15rem;
     margin: 5px 0; }
@@ -6913,6 +6923,25 @@ button.list-group-item-lightlightgray {
   .hover button.info {
     padding: 0.15rem 0.6rem;
     margin: 0.7rem 0 0 0; } }
+
+@media (max-width: 484px) {
+  .hover {
+    width: 8rem;
+    margin: 0.3rem 0; }
+  .hover h2 {
+    font-size: 0.75rem;
+    padding: 0.55rem; }
+  .hover .overlay {
+    width: 8.0rem; }
+  .hover img {
+    width: 8rem; }
+  .hover button.info {
+    padding: 0.12rem 0.4rem;
+    margin: 0.7rem 0 0 0; }
+  .hover button.info > a {
+    padding: 0.8rem 0.05rem;
+    margin: 0.7rem 0 0 0;
+    font-size: 0.9rem; } }
 
 .btn-group-prev-next {
   padding-top: 0.5rem;

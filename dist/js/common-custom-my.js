@@ -1,17 +1,18 @@
-var btnClickMail_1 = document.querySelector('.link_Post_1'),
-    btnClickMail_2 = document.querySelector('.link_Post_2'),
-    btnClickMail_3 = document.querySelector('.link_Post_3');
+var btnClickMail_s = document.querySelectorAll('#post'),
+    m = new Array('moc.liamg@432nugresm'); 
 
-    btnClickMail_1.onclick = hideMailopenMailwin;
-    btnClickMail_2.onclick = hideMailopenMailwin;
-    btnClickMail_3.onclick = hideMailopenMailwin;
-
-var m = new Array('moc.liamg@432nugresm');
-
-    function hideMailopenMailwin (){
-       var w = window.open();
-       w.window.location="mailto:" + m[0].split('').reverse().join('');
+    for(var i=0; i <btnClickMail_s.length; i++){
+        btnClickMail_s[i].onclick = hideMailopenMailwin;
     }
+
+   function hideMailopenMailwin (){
+        var sym = this.getAttribute("data-oper");
+           if(sym =='post'){
+               var w = window.open();
+               w.window.location="mailto:" + m[0].split('').reverse().join('');
+            }
+        }
+ 
 
 var $btnTop = $('.btn-totop');
 

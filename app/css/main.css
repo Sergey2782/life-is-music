@@ -6522,7 +6522,6 @@ button.list-group-item-lightlightgray {
   text-align: center; }
 
 .anime {
-  background-color: rgba(214, 214, 214, 0.62);
   margin-bottom: 2rem; }
 
 .world {
@@ -6553,8 +6552,7 @@ button.list-group-item-lightlightgray {
   position: fixed;
   bottom: 2.5rem;
   left: 1.7rem;
-  font-size: 0.9rem;
-  padding: 0.2rem; }
+  font-size: 5rem; }
   @media (max-width: 576px) {
     .btn-totop {
       left: 0.1rem;
@@ -6568,13 +6566,11 @@ button.list-group-item-lightlightgray {
   @media (min-width: 768px) and (max-width: 991px) {
     .btn-totop {
       left: 0.7rem;
-      font-size: 1rem;
-      padding: 0.2rem; } }
+      font-size: 0.5rem; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     .btn-totop {
       left: 0.5rem;
-      font-size: 0.9rem;
-      padding: 0.2rem; } }
+      font-size: 0.5rem; } }
 
 /*======= animation =====*/
 @-webkit-keyframes anime_one {
